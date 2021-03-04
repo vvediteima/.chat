@@ -1,1 +1,1 @@
-chmod +x .chat/* && echo 'alias joinchat="php ~/.chat/main.php"' && alias joinchat="php ~/.chat/main.php"
+chmod +x .chat/* && echo 'alias joinchat="php ~/.chat/main.php"' >> ~/.bash_aliases && alias joinchat="php ~/.chat/main.php"
