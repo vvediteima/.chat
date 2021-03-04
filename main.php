@@ -10,7 +10,7 @@ else if ($act=='j') {
     $cid=trim(fgets(STDIN));
     $uid=file_get_contents("http://3.120.174.176/clientserver/?act=join&cid=$cid");
 }
-system("mate-terminal -e 'php /home/vvediteima/.chat/send.php $cid $uid'");
+system("mate-terminal -e 'php ~/.chat/send.php $cid $uid'");
 $old='';
 while (1) {
 ///////////
