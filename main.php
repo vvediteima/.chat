@@ -1,5 +1,5 @@
 <?php
-$user=trim(shell_exec('echo $USERNAME'));
+$user=trim(shell_exec('echo $USER'));
 echo "Type 'j' to join or 'c' to create: ";
 $act=trim(fgets(STDIN));
 if ($act=='c') {
