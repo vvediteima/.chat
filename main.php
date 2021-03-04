@@ -10,6 +10,7 @@ else if ($act=='j') {
     echo "Key In ChatId: ";
     $cid=trim(fgets(STDIN));
     $uid=file_get_contents("http://3.120.174.176/clientserver/?act=join&cid=$cid");
+file_get_contents("http://3.120.174.176/clientserver/?act=send&cid=$cid&uid=$uid&text=Hello,%20I`m%20here!");
 }
 system("mate-terminal -e 'php /home/$user/.chat/send.php $cid $uid'");
 $old='';
