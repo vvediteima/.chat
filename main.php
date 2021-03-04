@@ -1,4 +1,5 @@
 <?php
+$user=trim(shell_exec('echo $USERNAME'));
 echo "Type 'j' to join or 'c' to create: ";
 $act=trim(fgets(STDIN));
 if ($act=='c') {
@@ -10,7 +11,7 @@ else if ($act=='j') {
     $cid=trim(fgets(STDIN));
     $uid=file_get_contents("http://3.120.174.176/clientserver/?act=join&cid=$cid");
 }
-system("mate-terminal -e 'php ~/.chat/send.php $cid $uid'");
+system("mate-terminal -e 'php /home/$user/.chat/send.php $cid $uid'");
 $old='';
 while (1) {
 ///////////
