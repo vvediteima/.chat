@@ -19,7 +19,7 @@ $new=file_get_contents("http://3.120.174.176/clientserver/?act=show&cid=$cid");
 if ($old!=$new) {
 $old=$new;
 system("clear");
-echo $old;
+echo rawurldecode($old);
 }
 ///////////
 }
