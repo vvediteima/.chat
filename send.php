@@ -1,5 +1,5 @@
 <?php
-$user=trim(shell_exec('echo $USERNAME'));
+$user=trim(shell_exec('echo $USER'));
 $cid=$argv[1];
 $uid=$argv[2];
 while (1) {
